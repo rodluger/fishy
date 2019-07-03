@@ -22,7 +22,6 @@ conda info -a
 
 # Install exoplanet
 pip install astropy
-pip install parameterized
 pip install exoplanet
 
 # Install the dev version of starry
