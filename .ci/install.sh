@@ -20,6 +20,9 @@ fi
 # Display some debugging info
 conda info -a
 
+# Install exoplanet
+pip install exoplanet
+
 # Install the dev version of starry
 git clone --single-branch --branch dev https://github.com/rodluger/starry.git
 pushd starry
