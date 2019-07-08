@@ -1,5 +1,5 @@
 #!/bin/bash -x
-set -e
+#set -e
 
 # Only trigger on regular commits
 if [ "$TRAVIS_PULL_REQUEST" = "false" ]
@@ -20,7 +20,7 @@ then
     git status
     git -c user.name='travis' -c user.email='travis' commit -m "building the paper"
     git status
-    git push -f https://$GITHUB_USER:$GITHUB_API_KEY@github.com/$TRAVIS_REPO_SLUG HEAD:$TRAVIS_BRANCH-pdf >/dev/null 2>&1
+    git push -f https://$GITHUB_USER:$GITHUB_API_KEY@github.com/$TRAVIS_REPO_SLUG HEAD:$TRAVIS_BRANCH-pdf #>/dev/null 2>&1
 
     echo "Done."
 
